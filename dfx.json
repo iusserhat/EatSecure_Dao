@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "EatSecure_Dao_backend": {
+      "candid": "src/EatSecure_Dao_backend/EatSecure_Dao_backend.did",
+      "package": "EatSecure_Dao_backend",
+      "type": "rust"
+    },
+    "EatSecure_Dao_frontend": {
+      "dependencies": [
+        "EatSecure_Dao_backend"
+      ],
+      "source": [
+        "src/EatSecure_Dao_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "EatSecure_Dao_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

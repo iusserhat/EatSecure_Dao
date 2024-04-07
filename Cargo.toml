@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/EatSecure_Dao_backend"
+]
+resolver = "2"
