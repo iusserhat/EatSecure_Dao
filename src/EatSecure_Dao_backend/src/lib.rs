@@ -30,7 +30,7 @@ type ProductInfo =Vec<Info>;
 struct ProductRegistry{
     product_list: Arc<Mutex<HashMap<String, Product>>>, 
     info_list: Arc<Mutex<HashMap<String, ProductInfo>>>, 
-    owner_list: Arc<Mutex<HashMap<String, Pet>>>,
+    owner_list: Arc<Mutex<HashMap<String, Product>>>,
 }
 
 
@@ -39,7 +39,7 @@ impl  ProductRegistry{
 
     pub fn new() -> Self {
 
-        pet_list= Arc::new(Mutex::new(HashMap::new())),
+        product_list= Arc::new(Mutex::new(HashMap::new())),
         info_list: Arc::new(Mutex::new(HashMap::new())),
 
 }
